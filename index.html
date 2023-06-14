@@ -1,18 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
-    <link rel="stylesheet" href="./src/styles/index.css" />
-    <title>Open Music</title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <script src="./src/scripts/theme.js"></script>
-    <script src="./src/scripts/productsData.js"></script>
-    <script src="./src/scripts/index.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/styles/reset.css" />
+  <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+  <link rel="stylesheet" href="./src/styles/header.css" />
+  <link rel="stylesheet" href="./src/styles/index.css" />
+  <title>Open Music</title>
+</head>
+
+<body>
+  <header>
+    <div class="header__container">
+      <h1 class="header__title">Open Music</h1>
+      <button class="header__btn">
+        <img class="img__btn" src="./src/assets/img/moon.svg" alt="DarkMode">
+      </button>
+    </div>
+  </header>
+  <main>
+    <section class="main__container">
+      <div class="main__container--box">
+        <h2 class="main__title">Gênero Musical</h2>
+        <ul class="main__list--btn"></ul>
+      </div>
+      <div class="main__primary">
+        <div class="main__primary--box">
+          <h2 class="main__primary--title">Definir preço</h2>
+          <p class="main__price">Até R$ <span class="price__value"> 100,00</span></p>
+        </div>
+        <input type="range" id="input__range" min="20" max="100" step="1" value="100">
+      </div>
+    </section>
+    <section class="main__secundary">
+      <div class="main__secundary--box">
+        <h2>Albums Encontrados</h2>
+      </div>
+      <ul class="main__list--albums">
+
+      </ul>
+    </section>
+  </main>
+  <script src="./src/scripts/theme.js"></script>
+  <script src="./src/scripts/productsData.js"></script>
+  <script src="./src/scripts/index.js"></script>
+</body>
+
 </html>

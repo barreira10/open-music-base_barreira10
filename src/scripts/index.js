@@ -90,9 +90,6 @@ function renderCards(array) {
 renderButtons(categories);
 renderCards(products);
 
-
-// ---------------------------------------------------------------------------------------
-
 function addEventsAndFilter(categories, products) {
   const buttons = document.querySelectorAll('.btn__mdt');
   const inputRange = document.querySelector('#input__range');
@@ -101,14 +98,8 @@ function addEventsAndFilter(categories, products) {
   let filteredProducts = [...products];
   let selectedCategory = 'Todos';
 
- 
-
-  
-
   buttons.forEach((button, index) => {
-    console.log(button)
      if (button.id == 0) {
-      console.log("oi")
         button.checked = true;
       }
     button.addEventListener('click', () => {
@@ -150,7 +141,6 @@ function addEventsAndFilter(categories, products) {
 
 const checkedFilter = () => {
   const storedCategory = JSON.parse(localStorage.getItem('selectedCategory'));
-  console.log(storedCategory);
   if(storedCategory){
   const button = document.getElementById(storedCategory);
   button.click();

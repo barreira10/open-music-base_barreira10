@@ -6,7 +6,8 @@ const renderDarkMode = () => {
     if (storedTheme) {
         document.body.classList.add('darkMode');
         const img = document.querySelector('.img__btn')
-        img.src = '../src/assets/img/sun.svg';
+        img.src = './src/assets/img/sun.svg';
+        img.alt = 'lightMode'
     }
 
 buttonDark.addEventListener('click', () => {
@@ -16,13 +17,14 @@ buttonDark.addEventListener('click', () => {
     if (isDarkMode) {
         localStorage.setItem('theme', true);
         const img = document.querySelector('.img__btn')
-        img.src = '../src/assets/img/sun.svg'
+        img.src = './src/assets/img/sun.svg'
+        img.alt = 'lightMode'
     } else {
         localStorage.removeItem('theme', false);
         const img = document.querySelector('.img__btn')
-        img.src = '../src/assets/img/moon.svg';
+        img.src = './src/assets/img/moon.svg';
+        img.alt = 'darkMode'
     }
-
 });
 };
 renderDarkMode();

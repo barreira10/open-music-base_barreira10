@@ -12,7 +12,7 @@ header {
 }
 
 .header__container {
-    max-width: 85%;
+    max-width: 65%;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -41,7 +41,7 @@ header {
     background-color: var(--color-grey-0);
 }
 .img__btn{
-    border-radius: 100%;
+    border-radius: 50%;
     transition: box-shadow 0.3s ease;
 }
 .img__btn:hover{
@@ -52,26 +52,3 @@ header {
     box-shadow: 0 0 2rem rgba(255, 255, 255, 0.4);
 
 }
-/* 
-@media(min-width: 768px) {
-    header {
-        padding: 1.5rem 2.5rem;
-    }
-
-    .header__container {
-        max-width: 768px;
-        width: 90%;
-    }
-}
-
-@media(min-width: 1200px) {
-    header {
-        padding: 2rem 3rem;
-    }
-
-    .header__container {
-        max-width: 1200px;
-        width: 80%;
-
-    }
-} */

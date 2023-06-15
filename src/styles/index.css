@@ -5,7 +5,7 @@
 
 .main__container {
     display: flex;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     flex-direction: column;
     gap: 2rem;
@@ -37,7 +37,7 @@
 .main__list--btn {
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 2.5rem;
     align-items: center;
 }
 
@@ -133,7 +133,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     margin: 0 auto;
-    width: 80%;
+    width: 60%;
 }
 
 .main__secundary--box {
@@ -160,7 +160,7 @@
 .card__container {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 48%;
     justify-content: space-between;
     background-color: var(--color-grey-8);
     margin-bottom: 3rem;

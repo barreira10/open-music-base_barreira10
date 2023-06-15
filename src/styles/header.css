@@ -2,6 +2,8 @@ header {
     margin: 0 auto;
     padding: 1rem 2rem;
     width: 100%;
+    padding: 1.5rem 2.5rem;
+
 }
 
 .header__container>div>button>figure>img {
@@ -10,7 +12,7 @@ header {
 }
 
 .header__container {
-    max-width: 320px;
+    max-width: 85%;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -38,7 +40,19 @@ header {
 .darkMode .header__btn{
     background-color: var(--color-grey-0);
 }
+.img__btn{
+    border-radius: 100%;
+    transition: box-shadow 0.3s ease;
+}
+.img__btn:hover{
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.7);
 
+}
+.darkMode .img__btn:hover{
+    box-shadow: 0 0 2rem rgba(255, 255, 255, 0.4);
+
+}
+/* 
 @media(min-width: 768px) {
     header {
         padding: 1.5rem 2.5rem;
@@ -60,4 +74,4 @@ header {
         width: 80%;
 
     }
-}
+} */

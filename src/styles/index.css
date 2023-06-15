@@ -22,7 +22,7 @@
 .main__title {
     font-size: var(--font-2);
     font-weight: var(--weight-1);
-    margin: 1rem 0;
+    margin: 1rem 0 -1rem;
     justify-content: flex-start;
     color: var(--color-grey-1);
 }
@@ -37,7 +37,7 @@
 .main__list--btn {
     display: flex;
     flex-wrap: wrap;
-    gap: 2.5rem;
+    gap: 1.6rem;
     align-items: center;
 }
 
@@ -50,7 +50,7 @@
     border-color: var(--color-grey-8);
     border-radius: var(--radius-1);
     cursor: pointer;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1rem;
     transition: box-shadow 0.3s ease;
 }
 
